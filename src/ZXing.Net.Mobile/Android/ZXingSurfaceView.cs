@@ -517,7 +517,7 @@ namespace ZXing.Mobile
                     var found = false;
                     Android.Util.Log.Debug (MobileBarcodeScanner.TAG, "Found " + numCameras + " cameras...");
 
-                    var whichCamera = CameraFacing.Back;
+                    var whichCamera = CameraFacing.Front;
 
                     if (options.UseFrontCameraIfAvailable.HasValue && options.UseFrontCameraIfAvailable.Value)
                         whichCamera = CameraFacing.Front;
